@@ -1,0 +1,19 @@
+.h1 {
+  position: relative;
+  display: inline-block;
+  &:after {
+    position: absolute;
+    content: '';
+    background: green;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: calc(100% + 10px);
+    top: calc(50% - 10px);
+  }
+}
+
+body {
+  background: url("../img/viber_image.jpg");
+}
